@@ -75,10 +75,6 @@ PlaywrightPHP/
 └── README.md           # Documentação do projeto
 ```
 
-## 🤝 Contribuindo
-
-Este projeto está em fase de construção!
-
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://mit-license.org/) para mais detalhes.
