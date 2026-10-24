@@ -12,7 +12,7 @@ require __DIR__.'/helpers/estiloTexto.php';
 use Playwright\Playwright;
 
 $context = Playwright::chromium([
-    'headless' => false,
+    'headless' => true,
     'context' => [
         'viewport'=> ['width' => 1280, 'height' => 720],
     ]
