@@ -63,13 +63,13 @@ php index.php
 
 Por padrão, os testes podem ser configurados para rodar em modo *headless* (sem interface gráfica, ideal para CI/CD). Se você deseja **assistir aos testes ocorrendo no navegador** em tempo real para fins de depuração, abra o arquivo `index.php` e altere o parâmetro `headless` de `true` para `false` na configuração do `$context`:
 
-> ```php
-> // Antes (Execução em segundo plano (terminal))
-> $context = Playwright::chromium(['headless' => true]);
-> 
-> // Depois (Execução visível no navegador (terminal + navegador))
-> $context = Playwright::chromium(['headless' => false]);
-> ```
+```php
+// Antes (Execução em segundo plano (terminal))
+$context = Playwright::chromium(['headless' => true]);
+
+// Depois (Execução visível no navegador (terminal + navegador))
+$context = Playwright::chromium(['headless' => false]);
+```
 
 ## 🏗️ Estrutura do Projeto (Planejada)
 
