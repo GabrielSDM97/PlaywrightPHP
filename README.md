@@ -35,21 +35,21 @@ composer --version
 
 3. Instale os navegadores gerenciados pelo Playwright:
 
-   - **Para instalar apenas o Chromium (recomendado para começar):**
-     ```bash
-     vendor/bin/playwright-install chromium
-     ```
-     *Resultado esperado: A build gerenciada do Chromium será baixada para o cache de navegadores.*
+- **Para instalar apenas o Chromium (recomendado para começar):**
+  ```bash
+  vendor/bin/playwright-install chromium
+  ```
+  *Resultado esperado: A build gerenciada do Chromium será baixada para o cache de navegadores.*
 
-   - **Para instalar todos os três navegadores (Chromium, Firefox e WebKit) e rodar suítes cross-browser:**
-     ```bash
-     vendor/bin/playwright-install --browsers
-     ```
+- **Para instalar todos os três navegadores (Chromium, Firefox e WebKit) e rodar suítes cross-browser:**
+  ```bash
+  vendor/bin/playwright-install --browsers
+  ```
 
-   - **Em uma máquina Linux nova ou em um ambiente de CI/CD (instala dependências do sistema operacional junto):**
-     ```bash
-     vendor/bin/playwright-install --with-deps chromium
-     ```
+- **Em uma máquina Linux nova ou em um ambiente de CI/CD (instala dependências do sistema operacional junto):**
+  ```bash
+  vendor/bin/playwright-install --with-deps chromium
+  ```
 
 ## 💻 Uso
 
@@ -67,7 +67,7 @@ PlaywrightPHP/
 ├── helpers/            # Funções auxiliares e utilitários reutilizáveis
 ├── POM/                # Page Object Model - Classes de abstração das páginas
 ├── testes/             # Scripts e suítes de testes automatizados
-├── vendor/              # Dependências do Composer (gerado automaticamente)
+├── vendor/             # Dependências do Composer (gerado automaticamente)
 ├── .gitignore          # Arquivos e pastas ignorados pelo Git
 ├── composer.json       # Configuração e dependências do projeto PHP
 ├── composer.lock       # Versões exatas das dependências instaladas
