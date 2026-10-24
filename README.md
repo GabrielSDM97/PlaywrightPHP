@@ -2,7 +2,7 @@
 
 > **⚠️ Aviso:** Projeto em construção! 🚧
 
-Este projeto tem como objetivo demonstrar uma estrutura robusta de testes automatizados, simulando ações de usuário no site [QA Practice Hub](https://qapracticehub.com/) utilizando o [PlaywrightPHP]((https://playwright-php.dev/)).
+Este projeto tem como objetivo demonstrar uma estrutura robusta de testes automatizados, simulando ações de usuário no site [QA Practice Hub](https://qapracticehub.com/) utilizando o [PlaywrightPHP](https://playwright-php.dev).
 
 ## 📋 Pré-requisitos
 
