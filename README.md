@@ -63,7 +63,7 @@ php index.php
 
 ```text
 PlaywrightPHP/
-├── artifacts/          # Armazenamento de evidências (screenshots, logs, vídeos)
+├── artifacts/          # Armazenamento de evidências (screenshots)
 ├── helpers/            # Funções auxiliares e utilitários reutilizáveis
 ├── POM/                # Page Object Model - Classes de abstração das páginas
 ├── testes/             # Scripts e suítes de testes automatizados
