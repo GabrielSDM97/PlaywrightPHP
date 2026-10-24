@@ -1,3 +1,3 @@
 # PlaywrightPHP
 
-Testar o site: https://testautomationpractice.blogspot.com/
+Testar o site: https://qapracticehub.com/
