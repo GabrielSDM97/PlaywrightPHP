@@ -1,2 +1,6 @@
 /vendor
 /artifacts/*
+**/*.doc
+**/*.docx
+**/*.txt
+**/*.ansi
