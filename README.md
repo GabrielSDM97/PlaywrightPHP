@@ -28,12 +28,7 @@ composer --version
    cd PlaywrightPHP
    ```
 
-2. Instale as dependências do PHP via Composer:
-   ```bash
-   composer install
-   ```
-
-3. Instale os navegadores gerenciados pelo Playwright:
+2. Instale os navegadores gerenciados pelo Playwright:
 
 - **Para instalar apenas o Chromium (recomendado para começar):**
   ```bash
@@ -53,15 +48,19 @@ composer --version
 
 ## 💻 Uso
 
-Para executar o programa principal e iniciar as simulações de teste, execute o seguinte comando na raiz do projeto:
+Para executar os testes e salvar os logs dos testes executados, execute o seguinte comando no terminal na raiz do projeto:
 
 ```bash
-php index.php
+composer test
 ```
+
+- **Logs**: As saídas do terminal ficam salvas em `log.ansi` na raiz do projeto. 
+
+- Utilize alguma extensão como [ANSI Colors](https://open-vsx.org/extension/iliazeus/vscode-ansi) para visualizar o `log.ansi` com cores, assim como é pelo terminal.
 
 💡 **Dica: Execução em Modo Visual (Não-Headless)**  
 
-Por padrão, os testes podem ser configurados para rodar em modo *headless* (sem interface gráfica, ideal para CI/CD). Se você deseja **assistir aos testes ocorrendo no navegador** em tempo real para fins de depuração, abra o arquivo `index.php` e altere o parâmetro `headless` de `true` para `false` na configuração do `$context`:
+Por padrão, os testes rodam em modo *headless* (sem interface gráfica, ideal para CI/CD). Se você deseja **assistir aos testes ocorrendo no navegador** em tempo real, abra o arquivo `app/index.php` e altere o parâmetro `headless` de `true` para `false` na configuração do `$context`:
 
 ```php
 // Antes (Execução em segundo plano (terminal))
@@ -75,6 +74,7 @@ $context = Playwright::chromium(['headless' => false]);
 
 ```text
 PlaywrightPHP/
+├── app/                # Scripts de execução de testes e registro de log
 ├── artifacts/          # Armazenamento de evidências (screenshots)
 ├── helpers/            # Funções auxiliares e utilitários reutilizáveis
 ├── POM/                # Page Object Model - Classes de abstração das páginas
@@ -83,7 +83,7 @@ PlaywrightPHP/
 ├── .gitignore          # Arquivos e pastas ignorados pelo Git
 ├── composer.json       # Configuração e dependências do projeto PHP
 ├── composer.lock       # Versões exatas das dependências instaladas
-├── index.php           # Ponto de entrada principal da execução
+├── log.ansi            # Arquivo de log. É criado durante os testes caso não exista.
 └── README.md           # Documentação do projeto
 ```
 
@@ -92,4 +92,4 @@ PlaywrightPHP/
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://mit-license.org/) para mais detalhes.
 
 ---
-Desenvolvido com 💜 e Playwright.
+Desenvolvido com PlaywrightPHP.
