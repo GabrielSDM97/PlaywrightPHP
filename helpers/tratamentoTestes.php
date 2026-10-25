@@ -11,11 +11,11 @@ function tratamentoFalhasAssert(string $printFalha, string $msgSucesso, string $
     try{
         # Já ... como argumento serve para desempacotar um array.
         expect($interface)->withTimeout($timeout * 1000)->$assertion(...$assertArgs);
-        echo estilo('PASSOU: ','verde','negrito').$msgSucesso.PHP_EOL;
+        echo estilo('PASSOU:','verde','negrito')." $msgSucesso".PHP_EOL;
         return true;
     }
     catch(\Throwable $e){
-        echo estilo('FALHOU: ','vermelho','negrito').get_class($e)." -> ".$e->getMessage()." -> $msgFalha".PHP_EOL;
+        echo estilo('FALHOU: ','vermelho','negrito')." ".get_class($e)." -> ".$e->getMessage()." -> $msgFalha".PHP_EOL;
         sleep(1);
         tiraPrint($printFalha);
         $GLOBALS['falhas'] += 1;
@@ -27,11 +27,11 @@ function tratamentoFalhasAssert(string $printFalha, string $msgSucesso, string $
 function tratamentoFalhasAcao(string $printFalha, string $msgSucesso, string $msgFalha, callable $action, ...$actionArgs){
     try{
         $action(...$actionArgs);
-        echo estilo('PASSOU: ','verde','negrito').$msgSucesso.PHP_EOL;
+        echo estilo('PASSOU: ','verde','negrito')." $msgSucesso".PHP_EOL;
         return true;
     }
     catch(\Throwable $e){
-        echo estilo('FALHOU: ','vermelho','negrito').get_class($e)." -> ".$e->getMessage()." -> $msgFalha".PHP_EOL;
+        echo estilo('FALHOU: ','vermelho','negrito')." ".get_class($e)." -> ".$e->getMessage()." -> $msgFalha".PHP_EOL;
         sleep(1);
         tiraPrint($printFalha);
         $GLOBALS['falhas'] += 1;

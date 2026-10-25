@@ -1,7 +1,7 @@
 <?php
 
 function testePreencherCampoNome(){
-    echo estilo("=== Teste para validar campo que recebe nome ===".PHP_EOL, 'amarelo', 'negrito');
+    echo estilo("=== Teste para validar campo que recebe nome ===", 'amarelo', 'negrito').PHP_EOL;
 
     $nome = 'Gabriel';
 
