@@ -1,5 +1,8 @@
 {
     "require-dev": {
         "playwright-php/playwright": "^1.5"
+    },
+    "scripts": {
+        "test": "@php app/logger.php"
     }
 }
